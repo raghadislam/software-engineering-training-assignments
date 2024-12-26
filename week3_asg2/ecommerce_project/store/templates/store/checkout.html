@@ -1,0 +1,11 @@
+<h1>Checkout</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="shipping_address">Shipping Address:</label>
+    <textarea name="shipping_address" required></textarea>
+    <button type="submit">Place Order</button>
+</form>
+<h2>Total Price: {{ total_price }}</h2>
+
+
+
